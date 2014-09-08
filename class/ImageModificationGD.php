@@ -12,7 +12,7 @@
 	* saveImage			- сохранить/вывести на экран картинку
 	*
 	* -------------------------------
-	* @version   0.1
+	* @version   0.0.1 alpha
 	* @author    Ipatov Evgeniy <admin@ipatov-soft.ru>
 	*
 	*/
@@ -185,7 +185,7 @@
 			$format = end($arrFile);
 			if($format == "jpg") $format = "jpeg";
 			$imgCreatefunc = "imagecreatefrom" . $format;
-			$this->imagecreatefrombmp($filePath);
+			// $this->imagecreatefrombmp($filePath);
 			if (!function_exists($imgCreatefunc)){
 				return false; 
 			}else{
